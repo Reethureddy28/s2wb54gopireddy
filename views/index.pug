@@ -4,7 +4,7 @@ block content
 
   h1= title
   p Welcome to Pug
-  button(type = "button", class = "btn btn-success", onClick = "moreClaps()") Press Me
+  button(type = "button", class = "btn btn-secondary", onClick = "moreClaps()") Press Me
   div(id = "target") Clap for me
 
     script.
@@ -13,3 +13,5 @@ block content
         clap_count = clap_count + 2;
         document.getElementById("target").innerHTML = 'Clap '+ clap_count +' times';
       }
+      - var popcorn= ['popcorn_flavour','popcorn_quantity','popcorn_price']
+  a(href='/popcorn') Click here to search for popcorns
